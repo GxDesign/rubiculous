@@ -1,0 +1,45 @@
+<div class="dashboard">
+<form action="/form" method="post">
+	<label for="participant">Participant</label>
+	<input type="text" name="participant">
+	<label for="card_value">Value</label>
+	<input type="text" name="value">
+	<label for="card_suit">Suit</label>
+	<input type="text" name="suit">
+	<input type="submit" value="Submit">
+</form>
+<br>
+<h4>Log:</h4>
+<table>
+	<tr>
+		<th>Participant Name</th>
+		<th>Value</th>
+		<th>Suit</th>
+	</tr>
+<% @all.reverse.each do |card| %>
+	<tr>
+		<td><%= card.participant %></td>
+		<td><%= card.value %></td>
+		<td><%= card.suit %></td>
+	</tr>
+<% end %>
+</table>
+</div>
+
+
+<style>
+.dashboard {
+	width: 700px;
+	padding: 30px;
+	background: #AEC1C1;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px dotted black;
+}
+</style>
