@@ -1,12 +1,9 @@
-require 'desktop'
 require 'sinatra'
 require 'sinatra/activerecord'
 require './config/environments'
 require './models/Card'
 require 'pry'
 
-
-Desktop::CLI.start %w[set /Users/Giancarlo/Documents/reveal.jpg]
 
 class App < Sinatra::Base
 

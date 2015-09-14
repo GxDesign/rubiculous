@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem "desktop"
 gem "pry"
 gem "sinatra"
 gem "activerecord"
