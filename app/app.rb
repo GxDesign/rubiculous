@@ -4,6 +4,9 @@ require './config/environments'
 require './models/Card'
 require 'pry'
 
+
+class App < Sinatra::Base
+
 	get '/' do
 	    "Hello, cruel world!"
 	end
@@ -22,3 +25,4 @@ require 'pry'
 		redirect '/form'
 	end
 
+end
