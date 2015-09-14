@@ -1,6 +1,3 @@
-require_relative '../models/Card'
-require_relative '../app'
-
 configure :production, :development do
 	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/cards')
 
