@@ -1,7 +1,7 @@
 
 development:
   adapter: postgresql
-  database: cards
+  database: development
   username: <%= ENV['PG_USER'] %>
   password: <%= ENV['PG_PASS'] %>
   host: localhost

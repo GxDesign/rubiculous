@@ -19,8 +19,8 @@ class App < Sinatra::Base
 	post '/form' do
 		@card = Card.new
 		@card.participant = params[:participant].capitalize
-		@card.value = params[:value].capitalize
-		@card.suit = params[:suit].capitalize
+		@card.card_value = params[:value].capitalize
+		@card.card_suit = params[:suit].capitalize
 		@card.save
 		redirect '/form'
 	end
