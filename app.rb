@@ -1,8 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require './config/environments'
-require './models/Card'
-require 'pry'
+require_relative './models/Card'
+require_relative './config/environments'
 
 	get '/' do
 	    "Hello, cruel world!"
