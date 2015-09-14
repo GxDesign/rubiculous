@@ -2,7 +2,7 @@ require_relative '../models/Card'
 require_relative '../app'
 
 configure :production, :development do
-	db = URI.parse(ENV['./db/cards'] || 'postgres://localhost/development')
+	db = URI.parse(ENV['./db/cards'] || 'postgres://localhost/cards')
 
 	ActiveRecord::Base.establish_connection(
 			:adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,

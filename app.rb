@@ -16,8 +16,8 @@ require 'pry'
 	post '/form' do
 		@card = Card.new
 		@card.participant = params[:participant].capitalize
-		@card.card_value = params[:value].capitalize
-		@card.card_suit = params[:suit].capitalize
+		@card.value = params[:value].capitalize
+		@card.suit = params[:suit].capitalize
 		@card.save
 		redirect '/form'
 	end
